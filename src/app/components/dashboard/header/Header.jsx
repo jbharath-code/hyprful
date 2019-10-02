@@ -61,8 +61,10 @@ class Header extends React.Component {
                         </span>
                     </div>
                 </div>
-                <div className="header-menu">
-                    {this.renderOptions()}
+                <div className="header-menu-container">
+                    <div className="header-menu">
+                        {this.renderOptions()}
+                    </div>
                 </div>
             </div>
         );

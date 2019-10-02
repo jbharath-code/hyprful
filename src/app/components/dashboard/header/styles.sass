@@ -1,8 +1,9 @@
 .header-container
-	width: 80%
-	background: white
+	width: 1254px
 	height: 100%
 	display: flex
+	padding: 0px 20px
+	background: white
 
 .logo-others
 	width: 45%
@@ -22,24 +23,35 @@
 	text-decoration: underline
 	cursor: pointer
 	&:hover
-		color: #FC8019
+		color: #e46d47
 		font-weight: bold
+	&:after
+		position: absolute
+		content: ""
+		height: 2px
+		left: 0px
+		bottom: -5px
+
+.header-menu-container
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: row-reverse
 
 .header-menu
-	width: 55%
+	width: 70%
 	height: 100%
 	display: flex
 	flex-direction: row-reverse
 	justify-content: space-between
 	align-items: center
 
-
 .menu-item
-	text-decoration: underline
 	cursor: pointer
 	&:hover
-		color: #FC8019
+		color: #e46d47
 		font-weight: bold
+		text-decoration: underline
 
 .option-image
 	width: 16px
