@@ -4,6 +4,8 @@
 	flex-direction: column
 	justify-content: center
 	color: #282c3f
+	position: relative
+	padding-top: 80px
 
 .header
 	display: flex
@@ -11,6 +13,12 @@
 	min-width: 1254px
 	height: 80px
 	justify-content: center
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 50
 
 .quick-menu
 	display: flex
@@ -31,12 +39,14 @@
 	flex-direction: column
 	justify-content: center
 	align-items: center
+	position: sticky
+	position: -webkit-sticky
+	top: 80px
 
 .restaurants
 	display: flex
 	width: 100%
 	min-width: 1254px
-	height: calc(100vh - 540px)
-	background: grey
-	flex-direction: column
+	margin-top: 10px
 	justify-content: center
+	align-items: center
