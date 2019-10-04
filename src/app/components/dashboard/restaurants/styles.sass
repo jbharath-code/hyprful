@@ -20,11 +20,11 @@
 .category-details
 	color: #53567C
 	display: flex
-	padding: 15px
+	padding: 15px 15px 15px 2px
 	height: 85px
-	flex-direction: column
 	box-sizing: border-box
-	justify-content: center
+	justify-content: flex-start
+	align-items: center
 	&:hover
 		background: #e46d47
 		color: #fff
@@ -32,6 +32,10 @@
 .category-name
 	font-size: 16px
 	font-weight: 600
+	text-transform: lowercase
+
+.category-name::first-letter
+	text-transform: uppercase
 	
 
 .category-count
@@ -42,6 +46,27 @@
 
 .category-restaurants
 	width: calc(100% - 250px)
+
+
+.category-image
+	width: 60px
+	height: 60px
+	color: #b2c0c7
+	text-align: center
+	display: block
+	border-radius: 90px
+	transition: transform .5s cubic-bezier(.215,.61,.355,1);
+
+.category-image-container
+	margin-right: 5px
+	width: 60px
+	height: 60px
+	background: #eef0f5
+	border-radius: 50%
+
+.category-text-details
+	display: flex
+	flex-direction: column
 
 .category-specific
 	padding-left: 60px
@@ -167,3 +192,20 @@
 	&:hover
 		position: relative
 		box-shadow: 0 4px 14px #d4d5d9
+
+
+.see-all-image
+	width: 40px
+	height: 40px
+	color: #b2c0c7
+	text-align: center
+	display: block
+	border-radius: 90px
+	transition: transform .5s cubic-bezier(.215,.61,.355,1);
+
+.see-all-image-container
+	margin: 0px 15px 0px 10px
+	width: 40px
+	height: 40px
+	background: #eef0f5
+	border-radius: 50%

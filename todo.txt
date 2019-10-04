@@ -1,0 +1,8 @@
+changing pop menu size on scroll
+see all option in the list on left side
+list navigation to sections without changing the href
+quick view on hover of cards
+see all section at bottom of page
+header change when moved to see all section
+carousel in the top images thing
+work address on top

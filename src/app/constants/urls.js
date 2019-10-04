@@ -1,5 +1,5 @@
 const urls = {
-    RESTAURANTS_API: `https://api.github.com/users/supreetsingh247`
+    RESTAURANTS_API: ``
 };
 
 export default urls;

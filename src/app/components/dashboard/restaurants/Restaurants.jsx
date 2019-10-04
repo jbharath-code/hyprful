@@ -14,11 +14,19 @@ class Restaurants extends React.Component {
             return (
                 <a key={category.data.creativeId} href={`#${category.data.creativeId}`} className="category-href">
                     <div className="category-details">
-                        <div className="category-name">
-                            {category.data.title}
+                        <div className="category-image-container">
+                            <img 
+                                className="category-image"
+                                src={`${this.props.restaurants.category + category.data.dwebOpenFilterSelectIcon}`}
+                            />
                         </div>
-                        <div className="category-count">
-                            {category.data.subtitle}
+                        <div className="category-text-details">
+                            <div className="category-name">
+                                {category.data.title}
+                            </div>
+                            <div className="category-count">
+                                {category.data.subtitle}
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -48,7 +56,6 @@ class Restaurants extends React.Component {
     }
 
     renderMore = (data) => {
-        console.log(data);
         if(data.totalCount > 9){
             return (
                 <div className="more">
@@ -130,18 +137,26 @@ class Restaurants extends React.Component {
     }
 
     render() {
-        console.log(this.props);
+        let seeAll = this.props.restaurants.data.data.cards[2].data.data;
         return (
             <div className="restaurants-container">
                 <div className="categories">
                     {this.renderCategories()}
-                    <a href="#all" className="category-href">
+                    <a className="category-href">
                         <div className="category-details">
-                            <div className="category-name">
-                                See all
+                            <div className="see-all-image-container">
+                                <img 
+                                    className="see-all-image"
+                                    src={`${this.props.restaurants.seeAll}`}
+                                />
                             </div>
-                            <div className="category-count">
-                                50 options
+                            <div className="category-text-details">
+                                <div className="category-name">
+                                   {seeAll.title}
+                                </div>
+                                <div className="category-count">
+                                    {seeAll.totalOpenRestaurants} Options
+                                </div>
                             </div>
                         </div>
                     </a>
