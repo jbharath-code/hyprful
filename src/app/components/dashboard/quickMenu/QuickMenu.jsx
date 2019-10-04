@@ -19,9 +19,9 @@ class QuickMenu extends React.Component {
 
     renderImages = () => {
         
-        var images = this.state.images.map((image) => {
+        var images = this.state.images.map((image, index) => {
             return (
-                <img className="image" src={image}/>
+                <img key={index} className="image" src={image}/>
             );
         });
         return images;

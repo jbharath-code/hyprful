@@ -22,7 +22,7 @@ class Dashboard extends React.Component {
 					<PopMenu/>
 				</div>
 				<div className="restaurants">
-					<Restaurants/>
+					<Restaurants {...this.props}/>
 				</div>
             </div>
         );

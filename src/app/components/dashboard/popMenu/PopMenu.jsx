@@ -26,7 +26,7 @@ class PopMenu extends React.Component {
                 };
             }
             return (
-                <img className="pop-image" style={style} src={image}/>
+                <img key={index} className="pop-image" style={style} src={image}/>
             );
         })
         

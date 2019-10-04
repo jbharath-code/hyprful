@@ -34,9 +34,9 @@ class Header extends React.Component {
 
     renderOptions = () => {
 
-        var options = this.state.options.map((option) => {
+        var options = this.state.options.map((option, index) => {
             return (
-                <div className="menu-item">
+                <div className="menu-item" key={index}>
                     <img className="option-image" src={option.image}/>
                     <span>
                         {option.name}
